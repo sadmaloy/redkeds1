@@ -1,0 +1,56 @@
+.total
+    margin-top: 80px
+    +reg
+    color: #fff
+    background-image: url('../img/total/zagagulka3.svg')
+    background-repeat: no-repeat
+    background-size: auto
+    background-position: 25% 35%
+    margin-bottom: 80px
+    &-block 
+        display: flex
+        flex-direction: column
+    &__title
+        font-size: 32px
+        line-height: 54px
+        color: #FF9110
+        text-transform: uppercase
+    &-list 
+        font-size: 24px
+        line-height: 40px
+        width: 820px
+        &__subtitle
+            margin-top: 0
+            list-style: none /* Убираем стандартные маркеры */
+            padding: 0 /* Убираем стандартный отступ слева */
+            li 
+                position: relative
+                padding-left: 30px
+                font-size: 24px
+                line-height: 40px
+                padding-bottom: 40px
+                &::before
+                    content: "•"
+                    color: #FF9110
+                    position: absolute // Абсолютное позиционирование относительно родителя
+                    left: 0 // Расположение слева
+                    top: 38%
+                    transform: translateY(-50%)
+    &-main 
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 40px
+        margin-bottom: 160px
+    &-gallery
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        position: relative
+        img:nth-child(2)
+            position: relative
+            top: -40px
+        img:nth-child(3)
+            position: relative
+            top: -80px
+            

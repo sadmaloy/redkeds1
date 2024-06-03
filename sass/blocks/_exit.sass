@@ -1,0 +1,38 @@
+.exit
+    +reg 
+    color: #fff
+    background-image: url('../img/long-line.svg')
+    background-repeat: no-repeat
+    background-size: auto
+    background-position: right bottom
+    &-text 
+        display: flex
+        flex-direction: column
+        margin-bottom: 100px
+        &__title
+            color: #FF9110
+            text-transform: uppercase
+            font-size: 32px
+            line-height: 54px
+        &__subtitle
+            line-height: 40px
+            font-size: 24px
+        &__name 
+            font-size: 32px
+            line-height: 54px
+            font-style: italic
+            align-self: flex-end
+    &-active
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-around
+        &__button
+            height: 200px
+            background: none
+            margin-top: -100px
+.button1
+    align-self: flex-start
+    margin-top: 165px
+.button2
+    margin-top: 460px 

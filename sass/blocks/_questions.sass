@@ -1,0 +1,29 @@
+.questions
+    position: relative
+    margin-top: 170px
+    &-list 
+        +reg
+        color: #fff
+        width: 709px
+        transform: rotate(-8deg)
+        margin-left: 90px
+    &-image 
+        position: absolute
+        top: -210%
+        right: 0
+.roster
+    list-style: none /* Убираем стандартные маркеры */
+    padding: 0 /* Убираем стандартный отступ слева */
+    li 
+        position: relative
+        padding-left: 30px
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 40px
+        padding-bottom: 30px
+        &::before
+            content: "•"
+            color: #FF9110
+            position: absolute // Абсолютное позиционирование относительно родителя
+            left: 0 // Расположение слева
+            top: 0

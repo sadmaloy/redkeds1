@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Street Soul Cyrillic';
+    src: url('/fonts/StreetSoulCyrillic-Regular.eot');
+    src: local('Street Soul Cyrillic Regular'), local('StreetSoulCyrillic-Regular'),
+        url('StreetSoulCyrillic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/StreetSoulCyrillic-Regular.woff') format('woff'),
+        url('/fonts/StreetSoulCyrillic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica World';
+    src: url('/fonts/StreetSoulCyrillic-Regular.eot');
+    src: local('Helvetica World'), local('HelveticaWorld-Regular'),
+        url('HelveticaWorld-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/HelveticaWorld-Regular.woff') format('woff'),
+        url('/fonts/HelveticaWorld-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@mixin street {
+    font-family: 'Street Soul Cyrillic';
+    font-weight: 400;
+}
+
+@mixin reg {
+    font-family: 'Helvetica World';
+    font-weight: 400;
+}
